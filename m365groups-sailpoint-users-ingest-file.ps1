@@ -1,9 +1,11 @@
 <#
 .SYNOPSIS
-   CSV export of groups for SailPoint
+   CSV export of groups for SailPoint ingest
 .DESCRIPTION
   This script generates the export file 'teams_users.csv' for SailPoint ingest.
-  Exported CSV contains custom column headers and appended values.
+  Exported CSV contains custom column headers and appended values for access reviews.
+  The output can be used for SailPoint ingest in environments that do not have
+  the SailPoint M365 Connector.
 .REQUIREMENTS
   Active powershell connection to Exchange Online
 .OUTPUTS
