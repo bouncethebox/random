@@ -6,3 +6,10 @@ INFO: PowerShell script to generate an output for access reviews that can be ing
 
 File: m365groups-sailpoint-users-ingest-file.ps1
 INFO: PowerShell script to generate an output for access reviews that can be ingested into SailPoint.
+
+$ sudo dpkg -P $(dpkg -l | grep nvidia-driver | awk '{print $2}')
+$ sudo apt autoremove
+
+$ sudo apt install xserver-xorg-video-nouveau
+
+lsmod | grep nouveau
