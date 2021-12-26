@@ -1,0 +1,43 @@
+---
+version: 20211103
+header_short: false
+console_out: true
+web_server_start: true
+default_module_frequency: 8
+start_page: 1
+web_server:
+  html_out: true
+  port: 8081
+  host: 0.0.0.0
+  ssl: false
+  api: true
+#  key: <your web key here>
+pages:
+    1: Signum
+modules:
+  signum_pool_miner:
+   every: 180
+   actual:
+   port: 0
+   page: 1
+   api: signum_pool_miner
+   extra: http://signapool.notallmine.net
+   api_node: https://signawallet.notallmine.net
+#   capacity:
+#     S-HGRC-XNHW-UNGN-87SBF: <put in drive space here>
+   nodes:
+     S-HGRC-XNHW-UNGN-87SBF: https://signapool.notallmine.net
+  signum_pool_view:
+   every: 180
+   port: 0
+   record_count: 15
+   show_block_winners: true
+   api: signum_pool_view
+   page: 1
+   extra:
+   nodes:
+     Signapool NotAllMine: https://signapool.notallmine.net
+   highlight_nodes: S-HGRC-XNHW-UNGN-87SBF
+plugins:
+#  what_to_mine:
+#    lifespan: 300
